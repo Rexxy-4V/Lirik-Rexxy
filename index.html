@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gingerbread-lover</title>  
+	<script src="vara.min.js"></script>
+
+  <style >
+	*{
+		padding: 0;
+		margin: 0;
+
+	}
+	body{
+		background: url(anime2.gif) fixed;
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		overflow: hidden;
+		color: black;
+
+
+	}
+	#container{
+		width: 80%;
+		margin: 20px auto;
+		min-height: 650px;
+		margin-top: 150px;
+    color: black;
+	}
+	video{
+		position: relative;
+
+	}
+	@media screen and (max-width: 400px) {
+		#container {
+			width: 100%;
+			margin:50% auto;
+			min-height: 800px;
+		}
+
+}
+.wrapper{
+  position: fixed;
+}
+.box div{
+  border: hidden;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color:transparent;
+  border: 6px solid;
+}
+.box div:nth-child(1){
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(2){
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+.box div:nth-child(3){
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(4){
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(6){
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(7){
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.box div:nth-child(8){
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.box div:nth-child(9){
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(10){
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate{
+  0%{
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+<body>
+<video src="Somebody's Pleasure V2"></video>
+<audio autoplay src="jaz1.mp3"></audio>
+  <div id="container"></div>
+  <a href="" class="hidden"></a>
+ <script>
+  	var fontSize = 40;
+  	if (window.screen.width > 700) 
+  		fontSize = 55 ;
+  	else if (window.screen.width > 1200)
+  		fontSize = 80; 
+  	var vara = new Vara(
+  		"#container",
+  		"https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+  		[
+  			{
+  				text : "I hold imagination",
+  				y: 50,
+         	 	delay : 1500,
+  				fromCurrentPosition: {y:false},
+  				duration:2000
+  		},
+  		{
+  			text : "got full of love this sadness",
+  			y: 50,
+  			fromCurrentPosition: {y:false},
+  			delay:2000,
+  			duration:2200
+  		},
+		{
+  			text : "I don't feel something special",
+  			y: 50,
+  			fromCurrentPosition: {y:false},
+  			delay:2000,
+  			duration:2400
+  		},
+		{
+  			text : "turn on the floor to get some special",
+  			y: 50,
+  			fromCurrentPosition: {y:false},
+  			delay:2000,
+  			duration:2500
+  		},
+		{
+  			text : "never thought i'm leaving me thought the truth that has been stolen",
+  			y: 50,
+  			fromCurrentPosition: {y:false},
+  			delay:1600,
+  			duration:7200
+  		},
+		{
+  			text : "it was in a blink of an eye",
+  			y: 50,
+  			fromCurrentPosition: {y:false},
+  			delay:1000,
+  			duration:3000
+  		},
+		{
+  			text : "find a way how to say goodbye",
+  			y: 50,
+  			fromCurrentPosition: {y:false},
+  			delay:1000,
+  			duration:3000
+  		},
+		  {
+			text : "i've got to take me away from all sadness",
+			y: 50,
+			fromCurrentPosition: {y:false},
+			fromCurrentPosition: {p:true},
+			delay:1200,
+			duration:6500
+		},
+		{
+			text : "stitch all my wounds confess all the sins",
+			y: 50,
+			fromCurrentPosition: {y:false},
+			delay:1500,
+			duration:3400
+		},
+		{
+			text : "and took all my insecure",
+			y: 50,
+			fromCurrentPosition: {y:false},
+			delay:1200,
+			duration:3300
+		},
+		{
+			text : "when will i got the love that is so pure?",
+			y: 50,
+			fromCurrentPosition: {y:false},
+			delay:1200,
+			duration:5700
+		},
+		{
+			text : "gotta have to always make sure",
+			y: 50,
+			fromCurrentPosition: {y:false},
+			delay:1500,
+			duration:3300
+		},
+		{
+			text : "that i'm not just somebody's pleasure",
+			y: 50,
+			fromCurrentPosition: {y:false},
+			delay:1300,
+			duration:4500
+		},
+  		],
+
+  			{
+  				strokeWidth: 2,
+  				color:"#fff",
+  				fontSize:fontSize,
+  				textAlign:"top"
+  			}
+  		);
+  	vara.ready(function(){
+  		var erase = true;
+  		vara.animationEnd(function(i, o){
+  			if (i == "no_erase") erase = false; 
+  			if (erase) {
+  				o.container.style.transition = 
+  				"opacity 1s 1s";
+  				o.container.style.opacity = 0;
+  			}
+  		});
+  	});
+
+  </script>
+</body>
+</html>
